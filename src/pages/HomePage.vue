@@ -1,6 +1,6 @@
 <template>
     <div class="pokemons-container">    
-      <pokemonBoxComponent v-for="(pokemon, key) in pokemonList" :name="pokemon?.name" :number="key + 1" :img="pokemon?.img" ></pokemonBoxComponent>
+      <pokemonBoxComponent v-for="(pokemon, key) in pokemonList" :id="key + 1" :name="pokemon?.name" :number="key + 1" :img="pokemon?.img" ></pokemonBoxComponent>
     </div>
 </template>
 
