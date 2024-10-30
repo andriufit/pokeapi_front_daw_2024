@@ -1,0 +1,37 @@
+$bgColor: #0000ff;
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    .title-container{
+        width: 100%;
+        display: flex;
+
+        img{
+            margin: auto;
+        }
+    }
+}
+
+body{
+    background-color: $bgColor;
+
+    main{
+        width: 100%;
+        display: flex;
+
+        .pokemons-container{
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-flow: wrap;
+            margin-top: 45px
+        }
+    }
+}
+
+@import "./pokemonBoxComponent.scss";
