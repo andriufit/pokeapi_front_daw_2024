@@ -1,17 +1,21 @@
 <template>
-    <div class="pokemon-box-item">
-        <div class="pokemon-box-img-container">
-            <img :src="img">
-        </div>
-
-        <span>{{ number + " " + name }}</span>
+  <RouterLink class="pokemon-box-item" :to="to">
+    <div class="pokemon-box-img-container">
+      <img :src="img" :alt="`Imagen de ${name}`" />
     </div>
+
+    <span>{{ number + " " + name }}</span>
+  </RouterLink>
 </template>
 
 <script setup>
-    const props = defineProps({
-        img: String,
-        name: String,
-        number: Number
-    });
+const props = defineProps({
+  img: String,
+  name: String,
+  number: [Number, String],
+  to: {
+    type: String,
+    required: true
+  }
+});
 </script>
