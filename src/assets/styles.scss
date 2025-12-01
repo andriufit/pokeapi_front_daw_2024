@@ -34,4 +34,93 @@ body{
     }
 }
 
+.loading-state, .error-state {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 40px 0;
+}
+
+.pokemon-detail {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background: #0a0a3a;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.back-button {
+    align-self: flex-start;
+    padding: 10px 16px;
+    background: #ffcb05;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #2b2b2b;
+}
+
+.detail-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    h1 {
+        margin: 0;
+    }
+    .identifier {
+        background: #ef5350;
+        padding: 6px 12px;
+        border-radius: 12px;
+        font-weight: bold;
+    }
+}
+
+.sprites {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+        background: white;
+        padding: 12px;
+        border-radius: 12px;
+        width: 180px;
+    }
+}
+
+.description {
+    background: #11115c;
+    padding: 16px;
+    border-radius: 12px;
+    line-height: 1.5;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.detail-card {
+    background: #11115c;
+    padding: 14px;
+    border-radius: 12px;
+
+    h3 {
+        margin-top: 0;
+    }
+
+    ul {
+        padding-left: 16px;
+    }
+}
+
 @import "./pokemonBoxComponent.scss";
